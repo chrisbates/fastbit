@@ -67,7 +67,7 @@ public:
 
     bool empty() const {return (m_begin == 0 || m_begin >= m_end);};
     size_t size() const {	///!< Return the number of elements.
-	return (m_begin > (void*)0 && m_end > m_begin ? m_end - m_begin : (void*)0);
+	return (m_begin > 0 && m_end > m_begin ? m_end - m_begin : 0);
     };
     inline void clear();
 
